@@ -5,6 +5,7 @@ import "time"
 // SpecSchedule specifies a duty cycle (to the second granularity), based on a
 // traditional crontab specification. It is computed initially and stored as bit sets.
 type SpecSchedule struct {
+	// Dow 是特殊定义，
 	Second, Minute, Hour, Dom, Month, Dow uint64
 
 	// Override location for this schedule.
